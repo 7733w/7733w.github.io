@@ -1,40 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>圣诞树</title>
-    <style>
-        html,body{
-            margin: 0;
-            width:90%;
-            height: 85%;
-        }
-        #main{
-	position: absolute; 
-		top: 0; 
-		left: 0; 
-}
-        #video{
-            width:99%;
-            height:90%;
-        }
-        .hidden{
-            display:none;
-        }
-    </style>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可以成为我的恋人吗？</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main">
-        <video id="video" muted="muted" autoplay="autoplay" loop="loop" src="AE.mp4">
-        </video>
+    <div class="container">
+        <img id="mainImage" src="images/heart.png" alt="爱心">
+        <h1 id="question">可以成为我的恋人吗？</h1>
+        <div class="buttons">
+            <button id="yes">可以</button>
+            <button id="no">不要</button>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
-<script type="text/javascript">
-    $(function(){
-		var video = document.getElementById("video");
-        video.src = "";
-        video.play();
-    });
-</script>
 </html>
